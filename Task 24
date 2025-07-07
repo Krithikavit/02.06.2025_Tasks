@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeat Text</title>
+</head>
+<body>
+    <h2>Repeated Text:</h2>
+    <div id="output"></div>
+
+    <script>
+        let times = prompt("How many times do you want to repeat the text?");
+        let result = "";
+
+        for (let i = 1; i <= times; i++) {
+            result += i + ". Hello<br>";
+        }
+
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>
