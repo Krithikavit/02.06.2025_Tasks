@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Positive Number</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        // Prompt the user to enter a number
+        let number = prompt("Enter a number:");
+
+        // Convert input to a number type
+        number = Number(number);
+
+        // Check if number is positive, negative, or zero
+        let message;
+        if (number > 0) {
+            message = "The number is Positive.";
+        } else if (number < 0) {
+            message = "The number is Negative.";
+        } else if (number === 0) {
+            message = "The number is Zero.";
+        } else {
+            message = "Invalid input.";
+        }
+
+        // Display the result in the paragraph
+        document.getElementById("result").textContent = message;
+    </script>
+</body>
+</html>
